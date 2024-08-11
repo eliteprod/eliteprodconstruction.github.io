@@ -23,7 +23,7 @@ nav {
 }
 
 .logo img {
-    height: 78px; /* Logo高度减半 */
+    height: 70px; /* Logo高度减半 */
 }
 
 .menu-icon {
@@ -168,10 +168,22 @@ h2 {
 
 #residential-intro,
 #commercial-intro,
-#real-estate-development-intro,
+#new-construction-intro,
 #land-development-intro,
-#construction-service-intro {
+#asphalt-intro {
     padding-top: 1em; /* 添加顶部填充以避免被导航栏遮挡 */
+}
+
+footer {
+    /* background-color: #28a745; 绿色背景 */
+    background-color: white; /* 白色背景 */
+    color: black;
+    text-align: center;
+    padding: 0.1em 0; /* 将内边距减半 */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    /* border-top: 0.5px solid #ddd;  添加顶部边框 */
 }
 
 footer {
@@ -189,7 +201,7 @@ footer.hidden {
     transform: translateY(100%); /* 隐藏footer，将其移出屏幕 */
 }
 
-/* 设置博客列表的布局和滚动条 */
+
 .gallery-row {
     display: flex;
     flex-wrap: wrap;
@@ -208,7 +220,7 @@ footer.hidden {
 }
 
 .blog-item {
-    flex: 1 1 22%;
+    flex: 1;
     margin: 1em;
     max-width: 22%;
     text-align: center;
@@ -271,16 +283,4 @@ footer.hidden {
     }
 }
 
-/* 设置联系方式样式 */
-.contact-info {
-    padding: 10px 20px;
-    border-radius: 5px; /* 可选，圆角效果 */
-    text-align: center; /* 确保文本居中 */
-    font-size: 18px;
-    color: white; /* 字体颜色 */
-}
-
-.contact-info p {
-    margin: 0; /* 移除默认的段落边距 */
-}
 

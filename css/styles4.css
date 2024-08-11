@@ -23,7 +23,7 @@ nav {
 }
 
 .logo img {
-    height: 78px; /* Logo高度减半 */
+    height: 70px; /* Logo高度减半 */
 }
 
 .menu-icon {
@@ -168,9 +168,9 @@ h2 {
 
 #residential-intro,
 #commercial-intro,
-#real-estate-development-intro,
+#new-construction-intro,
 #land-development-intro,
-#construction-service-intro {
+#asphalt-intro {
     padding-top: 1em; /* 添加顶部填充以避免被导航栏遮挡 */
 }
 
@@ -194,24 +194,15 @@ footer.hidden {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-}
-
-.gallery-row img {
-    flex: 0.5;
-    max-width: 22%;
-    margin: 0.5%;
-    height: auto;
-}
-
-.project-item {
-    margin: 2em 0;
+    max-height: 80vh; /* 设置内容区域的最大高度 */
+    overflow-y: scroll; /* 启用垂直滚动条 */
 }
 
 .blog-item {
-    flex: 1 1 22%;
-    margin: 1em;
-    max-width: 22%;
+    flex: 1 1 22%; /* 每个项目占22%的宽度，自动适应剩余空间 */
+    margin: 1%;
     text-align: center;
+    box-sizing: border-box;
 }
 
 .blog-item img {
@@ -225,10 +216,18 @@ footer.hidden {
     font-size: 1.2em;
 }
 
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
+/* 在小屏幕上，每行显示的文章数量减少 */
+@media (max-width: 1200px) {
+    .blog-item {
+        flex: 1 1 45%; /* 每行显示2篇文章 */
     }
+}
+
+@media (max-width: 768px) {
+    .blog-item {
+        flex: 1 1 100%; /* 小屏幕上每行显示1篇文章 */
+    }
+}
     
     nav ul {
         flex-direction: column;
@@ -271,16 +270,4 @@ footer.hidden {
     }
 }
 
-/* 设置联系方式样式 */
-.contact-info {
-    padding: 10px 20px;
-    border-radius: 5px; /* 可选，圆角效果 */
-    text-align: center; /* 确保文本居中 */
-    font-size: 18px;
-    color: white; /* 字体颜色 */
-}
-
-.contact-info p {
-    margin: 0; /* 移除默认的段落边距 */
-}
 
