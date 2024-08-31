@@ -74,7 +74,7 @@ nav ul li:hover .dropdown-content {
 }
 
 .background-image {
-    background-size: cover;
+    background-size: contain;
     background-position: center;
     height: calc(100vh - 100px); /* 高度为视口高度减去导航栏和页脚的高度 */
     display: flex;
