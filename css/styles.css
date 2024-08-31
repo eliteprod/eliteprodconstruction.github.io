@@ -95,6 +95,10 @@ nav ul li:hover .dropdown-content {
     background-repeat: no-repeat;  /* 背景图像不重复 */
 }
 
+#home {
+    background-image: url('elitebg.webp'); /* 主页背景图片 */
+}
+
 #services {
     background-image: url('services.webp'); /* 服务页面背景图片 */
 }
