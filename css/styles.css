@@ -80,7 +80,7 @@ nav ul li:hover .dropdown-content {
     height: calc(100vh - 150px); /* 高度为视口高度减去导航栏和页脚的高度 */
     min-height: 100vh; /* vh表示视口高度的百分比 */
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     text-align: center;
