@@ -80,13 +80,14 @@ nav ul li:hover .dropdown-content {
     height: calc(100vh - 100px); /* 高度为视口高度减去导航栏和页脚的高度 */
     min-height: 100vh; /* vh表示视口高度的百分比 */
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     text-align: center;
     padding: 1em;
     color: white; /* 白色字体 */
     text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.9);  /* 添加黑色阴影 */
+    padding-top: 20px; /* 增加顶部间距，可以根据需要调整 */
 }
 
 #home {
