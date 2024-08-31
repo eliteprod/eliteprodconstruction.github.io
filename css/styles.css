@@ -86,7 +86,7 @@ nav ul li:hover .dropdown-content {
     text-align: center;
     padding: 1em;
     color: white; /* 白色字体 */
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.8);  /* 添加黑色阴影 */
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.9);  /* 添加黑色阴影 */
 }
 
 #home {
