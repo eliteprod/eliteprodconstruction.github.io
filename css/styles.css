@@ -93,7 +93,6 @@ nav ul li:hover .dropdown-content {
 #home {
     /* background-image: url('assets\elitebg.webp'); 主页背景图片 */
     background-image: url('elitebg.webp');
-   <!-- background-size: cover;  /* 使背景图像覆盖整个容器 */ -->
 }
 
 #services {
