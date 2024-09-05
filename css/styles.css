@@ -300,5 +300,5 @@ footer.hidden {
 img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* 确保图片填充而不会拉伸变形 */
+    object-fit: contain; /* 确保图片填充而不会拉伸变形 */
 }
