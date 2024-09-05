@@ -308,9 +308,4 @@ img {
     max-width: 100%; /* 防止父容器宽度超出屏幕 */
     display: block;  /* 确保父容器是块级元素，避免内容重叠 */
 }
-@media (max-width: 768px) {
-    img {
-        width: 100%;
-        height: auto;
-    }
-}
+
