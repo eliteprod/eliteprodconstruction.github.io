@@ -303,9 +303,3 @@ img {
     object-fit: cover; /* 防止拉伸，确保图片填充而不失真 */
 }
 
-.container {
-    width: 100%;
-    max-width: 100%; /* 防止父容器宽度超出屏幕 */
-    display: block;  /* 确保父容器是块级元素，避免内容重叠 */
-}
-
