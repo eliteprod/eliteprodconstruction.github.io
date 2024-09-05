@@ -298,7 +298,19 @@ footer.hidden {
 }
 
 img {
+    width: 100%;   /* 宽度充满容器 */
+    height: auto;  /* 高度自动调整，保持原比例 */
+    object-fit: cover; /* 防止拉伸，确保图片填充而不失真 */
+}
+
+.container {
     width: 100%;
-    height: auto;
-    object-fit: contain; /* 确保图片填充而不会拉伸变形 */
+    max-width: 100%; /* 防止父容器宽度超出屏幕 */
+    display: block;  /* 确保父容器是块级元素，避免内容重叠 */
+}
+@media (max-width: 768px) {
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
