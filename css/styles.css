@@ -297,3 +297,8 @@ footer.hidden {
     list-style: none; /* 确保单独的列表项不显示点 */
 }
 
+img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* 确保图片填充而不会拉伸变形 */
+}
