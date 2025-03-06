@@ -1,0 +1,83 @@
+/* Free Quote 页面样式 */
+.quote-section {
+    padding: 50px 20px;
+    background-color: #f4f4f4; /* 浅灰色背景 */
+    text-align: center;
+}
+
+.quote-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quote-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333; /* 深灰色标题 */
+}
+
+.quote-content p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #555; /* 灰色文本 */
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+    color: #444; /* 深灰色标签 */
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #ddd; /* 浅灰色边框 */
+    border-radius: 5px;
+    background-color: #f9f9f9; /* 浅灰色背景 */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #0073e6; /* 蓝色边框聚焦效果 */
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.cta-button {
+    background-color: #0073e6; /* 蓝色按钮 */
+    color: #fff;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #005bb5; /* 深蓝色悬停效果 */
+}
+
+/* 移除 Submit 后面的联系信息 */
+.contact-info {
+    display: none;
+}
