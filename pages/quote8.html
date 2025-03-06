@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote | EliteProd Construction LLC</title>
+    <meta name="description" content="Request a free quote for land development, home construction, renovations, and road paving in Georgia. EliteProd Construction LLC provides high-quality construction services.">
+    <meta name="robots" content="index, follow">
+
+    <!-- 统一导航栏样式 -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/quote.css">
+
+    <style>
+        /* 让整个页面背景变米黄色 */
+        body {
+            background-color: #FAF3C0;
+            min-height: 100vh; /* 确保页面高度足够，支持滚动 */
+            margin: 0;
+            padding: 0;
+        }
+
+        /* 让表单区域保持白色，提高可读性 */
+        .quote-section {
+            max-width: 600px;
+            margin: 100px auto 100px; /* 增加底部间距，防止内容过短 */
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 确保页面有足够内容让滚动条出现 */
+        footer {
+            margin-top: 100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/eliteprod.webp" alt="EliteProd Construction LLC Logo">
+                </a>
+            </div>
+            <ul id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/services.html">Our Services</a></li>
+                <li><a href="../pages/blogs.html">Resources</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../pages/quote.html" class="cta">Get a Free Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Free Quote 页面内容 -->
+    <section class="quote-section">
+        <h1>Get a Free Quote</h1>
+        <h2>Expert Construction & Land Development Estimates</h2>
+        <p>Fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+        <form action="https://formspree.io/f/mldgqqzv" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" aria-label="Full Name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" aria-label="Email Address" required>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Project Description</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your project..." aria-label="Project Description" required></textarea>
+            </div>
+
+            <button type="submit">Get My Free Estimate Now</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EliteProd Construction LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>

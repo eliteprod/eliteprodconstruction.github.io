@@ -3,47 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Services - EliteProd Construction LLC</title>
+    <title>Construction & Real Estate Development Services | EliteProd Construction LLC</title>
+    <meta name="description" content="Discover expert construction and real estate development services by EliteProd Construction LLC. We provide land development, major renovations, road paving, and commercial building solutions in Georgia.">
+    <meta name="robots" content="index, follow">
+
+    <!-- 统一导航栏样式 -->
     <link rel="stylesheet" href="../css/styles.css">
+
+    <!-- Schema 结构化数据 -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "name": "Construction & Real Estate Development Services",
+        "description": "EliteProd Construction LLC offers expert land development, major renovations, road paving, and commercial construction solutions in Georgia.",
+        "provider": {
+            "@type": "LocalBusiness",
+            "name": "EliteProd Construction LLC",
+            "url": "https://eliteprodconstructions.com/",
+            "telephone": "+1678-722-9136",
+            "email": "info@eliteprodconstructions.com",
+            "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "123 Main St",
+                "addressLocality": "Suwanee",
+                "addressRegion": "GA",
+                "postalCode": "30024",
+                "addressCountry": "US"
+            }
+        }
+    }
+    </script>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="../assets/eliteprod.png" alt="EliteProd Logo">
+                <a href="../index.html">
+                    <img src="../assets/eliteprod.png" alt="EliteProd Construction LLC Logo">
+                </a>
             </div>
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
             <ul id="nav-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="services.html">Services</a>
+                    <a href="../pages/services.html">Our Services</a>
                     <div class="dropdown-content">
-						<a href="land_development.html">Land Development</a>
-                        <a href="real_estate_development.html">Real Estate Development</a>
-                        <a href="construction_service.html">Construction Services</a>
+                        <a href="../pages/land_development.html">Land Development</a>
+                        <a href="../pages/real_estate_development.html">Real Estate Development</a>
+                        <a href="../pages/construction_service.html">Construction Services</a>
                     </div>
                 </li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../pages/blogs.html">Resources</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../pages/quote.html" class="cta">Get a Free Quote</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section id="services" class="background-image">
             <div class="container">
-                <h2 class="center-align"><strong>Our Services</strong></h2>
-                <!-- <p class="center-align">We offer a wide range of services to meet all your construction and remodeling needs:</p> -->
+                <h1 class="center-align"><strong>Our Construction & Development Services</strong></h1>
+                <h2 class="center-align">Providing Expert Land Development, Home Building, and Renovations</h2>
+                <p class="center-align">We offer a wide range of services to meet all your construction and real estate development needs:</p>
+                
                 <ul class="services-list left-align">
-					<li><a href="land_development.html"><strong>Land Development</strong></a> - Site preparation and infrastructure development, road and drainage systems.</li>
-                    <li><a href="real_estate_development.html"><strong>Real Estate Development</strong></a> - Residential and commercial new construction design and build services.</li>
-                    <li><a href="construction_service.html"><strong>Construction Services</strong></a> - Commercial/Residential major renovations and asphalt paving services for roads, parking lots, private driveways, and community roads.</li>
+                    <li>
+                        <a href="../pages/land_development.html"><strong>Land Development</strong></a> – Site preparation, grading, road infrastructure, and drainage systems.
+                    </li>
+                    <li>
+                        <a href="../pages/real_estate_development.html"><strong>Real Estate Development</strong></a> – Residential and commercial new construction design and build services.
+                    </li>
+                    <li>
+                        <a href="../pages/construction_service.html"><strong>Construction Services</strong></a> – Major renovations, asphalt paving, and concrete services for roads, parking lots, and private driveways.
+                    </li>
                 </ul>
             </div>
         </section>
     </main>
+
     <footer>
         <p>&copy; 2024 EliteProd Construction LLC. All rights reserved.</p>
+        <p>📞 <a href="tel:+1678-722-9136">+1 (678) 722-9136</a> | 📧 <a href="mailto:info@eliteprodconstructions.com">info@eliteprodconstructions.com</a> | 🌐 <a href="https://eliteprodconstructions.com/">https://eliteprodconstructions.com/</a></p>
     </footer>
+
     <script src="../js/scripts.js"></script>
 </body>
 </html>

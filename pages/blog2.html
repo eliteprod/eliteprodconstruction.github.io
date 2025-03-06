@@ -3,35 +3,68 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Innovative Commercial Construction Projects</title>
+    <title>Innovative Commercial Construction Projects | EliteProd Construction LLC</title>
+    <meta name="description" content="Explore the latest trends in commercial construction, including green buildings, smart technology, modular construction, and adaptive reuse. Learn how EliteProd Construction LLC leads the industry.">
+    <meta name="robots" content="index, follow">
+
+    <!-- 统一导航栏样式 -->
     <link rel="stylesheet" href="../css/styles.css">
+
+    <style>
+        /* 让页面高度至少等于窗口高度，确保滚动条存在 */
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* 确保 main 区域有足够的空间 */
+        main {
+            flex: 1;
+            margin-bottom: 100px;
+        }
+
+        /* 固定 footer 在底部 */
+        footer {
+            position: relative;
+            bottom: 0;
+            width: 100%;
+            padding: 20px 0;
+            background: #f8f8f8;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <img src="../assets/eliteprod.png" alt="Eliteprod Logo">
+                <a href="../index.html">
+                    <img src="../assets/eliteprod.png" alt="EliteProd Construction LLC Logo">
+                </a>
             </div>
             <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
             <ul id="nav-menu">
                 <li><a href="../index.html">Home</a></li>
                 <li class="dropdown">
-                    <a href="services.html">Services</a>
+                    <a href="../pages/services.html">Our Services</a>
                     <div class="dropdown-content">
-						<a href="land_development.html">Land Development</a>
-                        <a href="real_estate_development.html">Real Estate Development</a>
-                        <a href="construction_service.html">Construction Services</a>
+                        <a href="../pages/land_development.html">Land Development</a>
+                        <a href="../pages/real_estate_development.html">Real Estate Development</a>
+                        <a href="../pages/construction_service.html">Construction Services</a>
                     </div>
                 </li>
-                <li><a href="blogs.html">Blogs</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="../pages/blogs.html">Resources</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../pages/quote.html" class="cta">Get a Free Quote</a></li>
             </ul>
         </nav>
     </header>
+
     <main>
         <section class="container">
             <h1 class="center-align">Innovative Commercial Construction Projects</h1>
-            <img src="../assets/blog2.webp" alt="Blog 2" class="half-height full-width">
+            <img src="../assets/blog2.webp" alt="Commercial Construction Trends - EliteProd Construction" class="half-height full-width">
             <p>Commercial construction projects are constantly evolving, incorporating innovative designs and technologies. Here are some of the latest trends in commercial construction:</p>
             <ol>
                 <li><strong>Green Building:</strong> Sustainable construction practices are becoming increasingly important, with a focus on energy efficiency and eco-friendly materials.</li>
@@ -41,14 +74,18 @@
                 <li><strong>Adaptive Reuse:</strong> Repurposing old buildings for new uses, preserving historical architecture while meeting modern needs.</li>
             </ol>
         </section>
+
+        <section class="navigation-buttons center-align">
+            <a href="../pages/blog1.html" class="button">Previous Blog</a>
+            <a href="../pages/blog3.html" class="button">Next Blog</a>
+        </section>
     </main>
-  <!--  <div class="navigation-buttons">
-        <a href="blog1.html" class="button">Back</a>
-        <a href="blog3.html" class="button">Forward</a>
-    </div> -->
+
     <footer>
-        <p>&copy; 2024 EliteProd Construction. All rights reserved.</p>
+        <p>&copy; 2024 EliteProd Construction LLC. All rights reserved.</p>
+        <p>📞 <a href="tel:+1678-722-9136">+1 (678) 722-9136</a> | 📧 <a href="mailto:info@eliteprodconstructions.com">info@eliteprodconstructions.com</a> | 🌐 <a href="https://eliteprodconstructions.com/">https://eliteprodconstructions.com/</a></p>
     </footer>
+
     <script src="../js/scripts.js"></script>
 </body>
 </html>

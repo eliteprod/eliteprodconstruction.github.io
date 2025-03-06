@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote | EliteProd Construction LLC</title>
+    <meta name="description" content="Request a free quote for land development, home construction, renovations, and road paving in Georgia. EliteProd Construction LLC provides high-quality construction services.">
+    <meta name="robots" content="index, follow">
+
+    <!-- 保留你的 CSS 文件 -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/quote.css">
+
+    <style>
+        /* 设置背景色为浅米黄色 */
+        body {
+            background-color: #FAF3E0;
+            font-family: Arial, sans-serif;
+        }
+
+        .quote-section {
+            max-width: 600px;
+            margin: 40px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #FF7F50;
+            color: white;
+            padding: 12px;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        button:hover {
+            background-color: #FF6347;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .contact-info a {
+            color: #FF7F50;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/eliteprod.png" alt="EliteProd Construction LLC Logo">
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Free Quote 页面内容 -->
+    <section class="quote-section">
+        <h1>Get a Free Quote</h1>
+        <p>Fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+        <!-- 集成 Formspree 表单 -->
+        <form action="https://formspree.io/f/mldgqqzv" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select a Service</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Choose a Service</option>
+                    <option value="land-development">Land Development</option>
+                    <option value="real-estate-development">Real Estate Development</option>
+                    <option value="new-home-construction">New Home Construction</option>
+                    <option value="home-additions-renovations">Home Additions & Renovations</option>
+                    <option value="road-paving">Road Paving & Infrastructure</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Project Description</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your project..." required></textarea>
+            </div>
+
+            <button type="submit">Submit Request</button>
+        </form>
+
+        <div class="contact-info">
+            <h3>Need Immediate Assistance?</h3>
+            <p>📞 Call Us: <a href="tel:+1678-722-9136">+1 (678) 722-9136</a></p>
+            <p>📧 Email Us: <a href="mailto:info@eliteprodconstructions.com">info@eliteprodconstructions.com</a></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EliteProd Construction LLC. All rights reserved.</p>
+    </footer>
+</body>
+</html>

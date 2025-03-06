@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get a Free Quote | EliteProd Construction LLC</title>
+    <meta name="description" content="Request a free quote for land development, home construction, renovations, and road paving in Georgia. EliteProd Construction LLC provides high-quality construction services.">
+    <meta name="robots" content="index, follow">
+
+    <!-- 统一导航栏样式 -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/quote.css">
+
+    <style>
+        /* 保持页面背景为白色 */
+        body {
+            background-color: #f5f5f5;
+            min-height: 100vh; /* 确保页面高度足够，支持滚动 */
+        }
+
+        /* 让表单区域变米黄色 */
+        .quote-section {
+            max-width: 600px;
+            margin: 100px auto 80px; /* 增加底部空间，确保有滚动条 */
+            background: #FAF3C0; /* 米黄色 */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html">
+                    <img src="../assets/eliteprod.webp" alt="EliteProd Construction LLC Logo">
+                </a>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            <ul id="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="../pages/services.html">Our Services</a>
+                    <div class="dropdown-content">
+                        <a href="../pages/land_development.html">Land Development</a>
+                        <a href="../pages/real_estate_development.html">Real Estate Development</a>
+                        <a href="../pages/construction_service.html">Construction Services</a>
+                    </div>
+                </li>
+                <li><a href="../pages/blogs.html">Resources</a></li>
+                <li><a href="../pages/contact.html">Contact</a></li>
+                <li><a href="../pages/quote.html" class="cta">Get a Free Quote</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Free Quote 页面内容 -->
+    <section class="quote-section">
+        <h1>Get a Free Quote</h1>
+		<h2>Expert Construction & Land Development Estimates</h2>
+        <p>Fill out the form below, and we’ll get back to you as soon as possible.</p>
+
+        <form action="https://formspree.io/f/mldgqqzv" method="POST">
+            <div class="form-group">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div class="form-group">
+                <label for="service">Select a Service</label>
+                <select id="service" name="service" required>
+                    <option value="" disabled selected>Choose a Service</option>
+                    <option value="land-development">Land Development</option>
+                    <option value="real-estate-development">Real Estate Development</option>
+                    <option value="new-home-construction">New Home Construction</option>
+                    <option value="home-additions-renovations">Home Additions & Renovations</option>
+                    <option value="road-paving">Road Paving & Infrastructure</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="message">Project Description</label>
+                <textarea id="message" name="message" rows="5" placeholder="Describe your project..." required></textarea>
+            </div>
+
+            <button type="submit">Submit Request</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 EliteProd Construction LLC. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("nav-menu");
+            menu.classList.toggle("show");
+        }
+    </script>
+</body>
+</html>
