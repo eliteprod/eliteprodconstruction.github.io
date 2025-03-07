@@ -217,7 +217,8 @@ footer.hidden {
 } */
 
 .project-item {
-    margin: 2em 0;
+    /* margin: 2em 0; */
+    margin: 0.5%;
     /* text-align: center; */
 }
 
