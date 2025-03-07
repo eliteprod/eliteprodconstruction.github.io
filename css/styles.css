@@ -218,7 +218,7 @@ footer.hidden {
 
 .project-item {
     margin: 2em 0;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .project-item .gallery-row {
