@@ -1,0 +1,34 @@
+/* 适用于 Land Development, Real Estate Development, Construction Service 页面 */
+
+/* 统一的 Gallery 布局 */
+.services-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px; /* 图片之间的间距 */
+    padding: 10px;
+}
+
+.services-gallery img {
+    flex: 0 1 calc(25% - 10px); /* PC 端：每行 4 张 */
+    max-width: calc(25% - 10px);
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* 📱 平板端（小屏幕 < 768px）：每行 2 张 */
+@media (max-width: 768px) {
+    .services-gallery img {
+        flex: 0 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+/* 📱 手机端（超小屏幕 < 480px）：每行 1 张 */
+@media (max-width: 480px) {
+    .services-gallery img {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
