@@ -193,13 +193,10 @@ footer.hidden {
 }
 
 /* 设置博客列表的布局和滚动条 */
-
-/* .gallery-row {
+.gallery-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around; 
-    /* justify-content: center; */
-    gap: 10px;
+    justify-content: space-around;
 }
 
 .gallery-row img {
@@ -209,50 +206,16 @@ footer.hidden {
     height: auto;
 }
 
-/* .gallery-row img {
-    width: calc (25% - 10px);
-    max-width: 300px;
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-} */
+@media screen and (max-width: 768px) {
+.gallery-img {
+              width: 100%;
+              height: auto;
+             }
+}
 
 .project-item {
-    /* margin: 2em 0; */
-    margin: 0.5%;
-    /* text-align: center; */
+    margin: 2em 0;
 }
-
-.project-item .gallery-row {
-    flex-wrap: wrap;
-}
-
-.project-item img {
-    width: 100%;
-    max-width: 350px;
-    height: auto;
-    object-fit: cover;
-} */
-
-
-/* 通用图片排列 */
-.gallery-row, .project-item .gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* 让图片均匀分布 */
-    gap: 10px; /* 确保间距一致 */
-}
-
-/* 确保 Gallery 和 Project-item 图片大小一致 */
-.gallery-row img, .project-item .gallery-row img {
-    flex: 0 1 calc(25% - 10px); /* PC 端：每行 4 张 */
-    max-width: calc(25% - 10px);
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-
 
 .blog-item {
     flex: 1 1 22%;
