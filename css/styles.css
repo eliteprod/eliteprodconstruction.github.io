@@ -206,10 +206,10 @@ footer.hidden {
     height: auto;
 }
 
-.project-item {
+/* .project-item {
     margin: 2em 0;
     text-align: center;
-}
+} */
 
 .project-item .gallery-row {
     flex-wrap: wrap;
