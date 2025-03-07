@@ -219,12 +219,12 @@ footer.hidden {
 
 
 /* 统一 Gallery 和 Project-item 布局 */
-.gallery-row, .project-item .gallery-row {
+/* .gallery-row, .project-item .gallery-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px; /* 统一间距 */
-}
+} 
 
 /* Gallery 和 Project-item 图片大小统一 */
 .gallery-row img, .project-item .gallery-row img {
@@ -233,7 +233,7 @@ footer.hidden {
     height: auto;
     object-fit: cover;
     border-radius: 5px;
-}
+} */
 
 /* 📱 平板端（小屏幕 < 768px）：每行 2 张 */
 @media (max-width: 768px) {
