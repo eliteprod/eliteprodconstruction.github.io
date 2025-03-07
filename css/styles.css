@@ -196,8 +196,8 @@ footer.hidden {
 .gallery-row {
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-around; */
-    justify-content: center;
+    justify-content: space-around; 
+    /* justify-content: center; */
     gap: 10px;
 }
 
