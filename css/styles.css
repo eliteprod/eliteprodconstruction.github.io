@@ -201,20 +201,20 @@ footer.hidden {
     gap: 10px;
 }
 
-/* .gallery-row img {
+.gallery-row img {
     flex: 0.5;
     max-width: 22%;
     margin: 0.5%;
     height: auto;
-} */
+}
 
-.gallery-row img {
+/* .gallery-row img {
     width: calc (25% - 10px);
     max-width: 300px;
     height: auto;
     object-fit: cover;
     border-radius: 5px;
-}
+} */
 /* .project-item {
     margin: 2em 0;
     text-align: center;
