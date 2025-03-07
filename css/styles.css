@@ -224,10 +224,10 @@ footer.hidden {
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 10px; /* 统一间距 */
-} 
+} */
 
 /* Gallery 和 Project-item 图片大小统一 */
-.gallery-row img, .project-item .gallery-row img {
+/* .gallery-row img, .project-item .gallery-row img {
     flex: 0 1 calc(25% - 10px); /* PC 端：每行 4 张 */
     max-width: calc(25% - 10px);
     height: auto;
