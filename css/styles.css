@@ -217,6 +217,40 @@ footer.hidden {
     margin: 2em 0;
 }
 
+
+/* 统一 Gallery 和 Project-item 布局 */
+.gallery-row, .project-item .gallery-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px; /* 统一间距 */
+}
+
+/* Gallery 和 Project-item 图片大小统一 */
+.gallery-row img, .project-item .gallery-row img {
+    flex: 0 1 calc(25% - 10px); /* PC 端：每行 4 张 */
+    max-width: calc(25% - 10px);
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* 📱 平板端（小屏幕 < 768px）：每行 2 张 */
+@media (max-width: 768px) {
+    .gallery-row img, .project-item .gallery-row img {
+        flex: 0 1 calc(50% - 10px);
+        max-width: calc(50% - 10px);
+    }
+}
+
+/* 📱 超小屏幕（< 480px）：每行 1 张 */
+@media (max-width: 480px) {
+    .gallery-row img, .project-item .gallery-row img {
+        flex: 0 1 100%;
+        max-width: 100%;
+    }
+}
+
 .blog-item {
     flex: 1 1 22%;
     margin: 1em;
