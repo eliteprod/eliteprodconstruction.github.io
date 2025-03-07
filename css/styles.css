@@ -208,6 +208,18 @@ footer.hidden {
 
 .project-item {
     margin: 2em 0;
+    text-align: center;
+}
+
+.project-item .gallery-row {
+    flex-wrap: wrap;
+}
+
+.project-item img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
 }
 
 .blog-item {
