@@ -232,6 +232,13 @@ footer.hidden {
     .menu-icon {
         display: block;
     }
+
+    @media screen and (max-width: 768px) {
+.gallery-img {
+              width: 100%;
+              height: auto;
+             }
+   }
     
     nav ul {
         flex-direction: column;
