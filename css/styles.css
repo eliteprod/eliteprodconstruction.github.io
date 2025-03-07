@@ -269,7 +269,7 @@ footer.hidden {
     border-radius: 5px;
 }
 
-/* 📱 手机端（小屏幕 < 768px）：每行 2 张 */
+/* /* 📱 手机端（小屏幕 < 768px）：每行 2 张 */
 @media (max-width: 768px) {
     .gallery-row img,
     .project-item .gallery-row img {
@@ -285,7 +285,7 @@ footer.hidden {
         flex: 0 1 100%;
         max-width: 100%;
     }
-}
+}  */
 
 
 
