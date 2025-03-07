@@ -235,57 +235,22 @@ footer.hidden {
 } */
 
 
-/* Gallery 图片排列 */
-.gallery-row {
+/* 通用图片排列 */
+.gallery-row, .project-item .gallery-row {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; /* 让图片均匀分布 */
-    gap: 10px; /* 图片之间的间距 */
+    gap: 10px; /* 确保间距一致 */
 }
 
-/* 确保 Gallery 图片大小 */
-.gallery-row img {
-    flex: 0 1 calc(25% - 10px); /* PC 端每行 4 张 */
+/* 确保 Gallery 和 Project-item 图片大小一致 */
+.gallery-row img, .project-item .gallery-row img {
+    flex: 0 1 calc(25% - 10px); /* PC 端：每行 4 张 */
     max-width: calc(25% - 10px);
     height: auto;
     object-fit: cover;
     border-radius: 5px;
 }
-
-/* 让 Project-item 部分的图片间距与 Gallery-row 一致 */
-.project-item .gallery-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around; /* 确保对齐方式一致 */
-    gap: 10px;
-}
-
-/* 确保 project-item 里的图片大小 */
-.project-item .gallery-row img {
-    flex: 0 1 calc(25% - 10px);
-    max-width: calc(25% - 10px);
-    height: auto;
-    object-fit: cover;
-    border-radius: 5px;
-}
-
-/* /* 📱 手机端（小屏幕 < 768px）：每行 2 张 */
-@media (max-width: 768px) {
-    .gallery-row img,
-    .project-item .gallery-row img {
-        flex: 0 1 calc(50% - 10px);
-        max-width: calc(50% - 10px);
-    }
-}
-
-/* 📱 超小屏幕（< 480px）：每行 1 张 */
-@media (max-width: 480px) {
-    .gallery-row img,
-    .project-item .gallery-row img {
-        flex: 0 1 100%;
-        max-width: 100%;
-    }
-}  */
 
 
 
