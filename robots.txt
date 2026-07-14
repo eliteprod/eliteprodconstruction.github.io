@@ -2,4 +2,4 @@ User-agent: *
 Disallow: /private/
 Allow: /
 
-Sitemap: https://eliteprodconstructions.com/sitemap.xml
+Sitemap: http://valtoroconstruction.com/sitemap.xml
